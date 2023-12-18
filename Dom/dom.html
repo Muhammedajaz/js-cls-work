@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">Lorem, ipsum dolor.</h1>
+    <p title="a gentle reminder" class="para">Lorem ipsum dolor sit amet consectetur.</p>
+    <ul id="purchase">
+        <li>lorem 1</li>
+        <li>lorem 2</li>
+        <li>lorem 3</li>
+    </ul>
+    <ul id="list">
+        <li>lorem 1</li>
+        <li>lorem 2</li>
+        <li>lorem 3</li>
+    </ul>
+    <p class="p4" id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, illum. Animi aliquid soluta reprehenderit
+        laborum hic veniam corrupti tempore, quibusdam autem! Est cumque, magnam reiciendis fuga ipsa consequuntur
+        inventore magni.
+    </p>
+    <p id="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, asperiores.
+    </p>
+
+
+    <script>
+        h1 = document.getElementById("heading")
+        list = document.getElementsByTagName("ul")
+        paragraph = document.getElementsByClassName("para")
+        p = document.getElementsByTagName("p")
+        para = document.querySelector("p")
+        allParagraphs = document.querySelectorAll("p")
+        console.log(h1);
+        console.log(list);
+        console.log(paragraph);
+        console.log(p);
+        console.log(para);
+        console.log(allParagraphs);
+
+
+        headingElement = document.querySelector("h1")
+        if (headingElement !== null) {
+            console.log("nodetype : ", headingElement.nodeType);
+            console.log("nodeName : ", headingElement.nodeName);
+            console.log("nodeValue : ", headingElement.nodeValue);
+        }
+
+        paragraphElement = document.querySelector("p")
+        textNode = paragraphElement.firstChild
+        if (textNode !== null) {
+            console.log("nodetype : ", textNode.nodeType);
+            console.log("nodeName : ", textNode.nodeName);
+            console.log("nodeValue : ", textNode.nodeValue);
+        }
+
+        listElement = document.getElementById("purchase")
+        if (listElement !== null) {
+            console.log("nodetype : ", listElement.nodeType);
+            console.log("nodename : ", listElement.nodeName);
+            console.log("nodevalue : ", listElement.nodeValue);
+        }
+
+        para2 = document.querySelector(".p2")
+        console.log(para2);
+        if (para2 !== null) {
+            idAttribute = para2.getAttributeNode("id")
+            if (idAttribute !== null) {
+                console.log("attribute nodetype : ", idAttribute.nodeType);
+                console.log("attribute nodename : ", idAttribute.nodeName);
+                console.log("attribute nodevalue : ", idAttribute.nodeValue);
+            }
+            else {
+                console.log("paragraph does not have an id attribute");
+            }
+        }
+        else {
+            console.log("paragraph element with class name p2 not found");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="b1" type="button">add event</button>
+    <div id="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis neque perspiciatis molestias labore sequi
+            commodi illum alias voluptatem consequuntur expedita optio porro quas sapiente dicta exercitationem odit,
+            ipsa officiis recusandae id consequatur enim veritatis tempore! Sint ipsum ipsa tempore ducimus adipisci
+            totam! Ea non perspiciatis laudantium, quo, expedita quasi esse facilis adipisci molestias consequatur
+            praesentium quibusdam nihil ex aliquid ratione atque omnis. Dolores modi excepturi odio inventore expedita,
+            sunt omnis veniam ipsam reprehenderit eos culpa? Reiciendis dolorum quisquam magnam possimus optio
+            consequuntur ullam. Sapiente ullam nobis eos, ducimus unde neque, deserunt adipisci quidem voluptas aliquid
+            optio tenetur itaque reprehenderit molestias!
+        </p>
+    </div>
+    <button id="b2">create Element</button>
+
+
+
+    <script>
+        // addEventListener()
+        btn = document.getElementById('b1')
+        function handleClick(event) {
+            alert('button clicked')
+        }
+        btn.addEventListener('click', handleClick)
+
+        // create element
+
+        // cnt = document.getElementById('container')
+        // paragraph = document.createElement('p')
+        // paragraph.innerHTML = 'praesentium quibusdam nihil ex aliquid ratione atque omnis. Dolores modi excepturi odio inventore expedita'
+        // cnt.appendChild(paragraph)
+
+        btn2 = document.getElementById('b2')
+        cnt = document.getElementById('container')
+        btn2.addEventListener('click', function () {
+            paragraph = document.createElement('p')
+            paragraph.innerHTML = 'praesentium quibusdam nihil ex aliquid ratione atque omnis. Dolores modi excepturi odio inventore expedita'
+            cnt.appendChild(paragraph)
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/excercises/exercises.js"></script>
+</head>
+
+<body>
+    <script>
+        function check(d) {
+            if (d >= 0) {
+                console.log(d + " is a positive number ");
+            }
+            else {
+                console.log(d + "is a negative number");
+            }
+        }
+        check(2)
+        check(-4)
+
+
+        a = 10
+        if (a >= 0) { //10>=0 T   -10>=0 F  go to else block (line 35)
+            if (a = 0) {
+                console.log("given number is 0 ");
+            }
+            else {
+                console.log("given number is positive ");
+            }
+        }
+
+        else {
+            console.log("given number is negative");
+        }
+
+
+        //  check wether the given number is divisble by 3 5 7
+        num = 210
+
+        if (num % 3 === 0) {
+            if (num % 5 === 0) {
+                if (num % 7 === 0) {
+                    console.log("number is divisible 3, 5, 7");
+                }
+                else {
+                    console.log("number divisible by 3 & 5, but not by 7");
+                }
+            }
+            else {
+                console.log("number divisible by 3 but not by 5 & 7");
+            }
+        }
+        else {
+            console.log("number is not divisible by 3, 5, 7");
+        }
+
+        if (num % 3 === 0 && num % 5 === 0 && num % 7 === 0) {
+            console.log("number divisible by either 3, 5, 7");
+        }
+        else{
+            console.log("not divisible by 3, 5, 7");
+        }
+
+        if (num % 3 === 0 || num % 5 === 0 || num % 7 === 0) {
+            console.log("number divisible by either 3, 5, 7");
+        }
+        else{
+            console.log("not divisible by 3, 5, 7");
+        }
+
+
+    </script>
+</body>
+
+</html>

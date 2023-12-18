@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">hello world</h1>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
+    <input type="text" id="inp" onchange="check()">
+
+    <script>
+        const heading = document.getElementById('head')
+        console.log(heading);
+        console.log(heading.innerHTML);
+        heading.innerHTML = 'gudmrng'
+        const para =document.getElementsByTagName('p')
+        console.log(para[1]);
+        const paragrapgh = document.getElementsByClassName('para')
+        console.log(paragrapgh);
+        const input1 = document.getElementById('inp')
+        input1.value = 'Ajaaz'
+        function check() {
+            
+        }
+    </script>
+</body>
+</html>

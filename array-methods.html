@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <script>
+
+        console.log("Array methods");
+        console.log("\n");
+
+        var fruits = ['Apple', 'Mango', 'Orange', 'Banana'];
+        console.log(`array of friuts is ${fruits}`);
+        var arr = ['aa', 'bb', 'cc', 'dd'];
+
+        var abc = ['ee', 'ff', 'gg', 'hh'];
+
+
+
+        console.log(fruits.length);
+        console.log(fruits.toString());
+        console.log(fruits.join(','));
+        console.log(fruits.pop());
+        console.log(fruits);
+
+        console.log(fruits.push('strawberry', 'kiwi'));
+        console.log(fruits);
+
+        console.log(fruits.shift());
+        console.log(fruits);
+
+        console.log(fruits.unshift());
+        console.log(fruits);
+        console.log(fruits.unshift('grapes'));
+        console.log(fruits);
+        // splice (index position , number of elements to be removed ,elements to be added)
+        //  ['Grapes', 'Mango', 'Orange', 'strawberry', 'kiwi'] [ 0 , 1 , 2 , 3 , 4 ]
+        console.log(fruits.splice(1, 2, 'avacado')); // ['Mango', 'Orange']
+        console.log(fruits);
+        //  ['Grapes', 'avacado', 'pineapple', 'strawberry', 'kiwi'] [ 0 , 1 , 2 , 3 , 4 ]
+
+
+        console.log(fruits.slice(2));
+        console.log(fruits);
+
+        console.log(fruits.reverse());
+        console.log(fruits.sort());
+        console.log(fruits.reverse());
+        console.log(fruits);
+
+        fruits[1] = 'papaya';
+        console.log(fruits);
+
+
+        // delete particular value
+
+        delete fruits[3];
+        console.log(fruits);
+
+        console.log(arr.concat(fruits));
+
+        var newArr = arr.concat(fruits, abc);
+        console.log(newArr);
+        console.log('\n');
+
+    </script>
+
+</body>
+
+</html>

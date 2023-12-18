@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #task_table{
+            border-collapse: collapse;
+            width: 80%;
+
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+        th{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <label for="taskvalue" id="task">Task</label>
+    <input type="text" id="taskvalue">
+    <br><br>
+    <label for="" id="Description">Description</label>
+    <textarea name="" id="Description-value" cols="30" rows="10"></textarea>
+    <br><br>
+    <button id="btn" onclick="addTask()">Add Task</button>
+    <br><br>
+
+    <table id="task_table">
+        <tr>
+            <th>sl no</th>
+            <th>task</th>
+            <th>Description</th>
+            <th>date</th>
+            <th>status</th>
+            <th>complete</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>task 1</td>
+            <td>des 1</td>
+            <td>10/02/2004</td>
+            <td></td>
+            <td><button>complete</button></td>
+        </tr>
+    </table>
+
+
+    <script>
+        i = 1;
+        function addTask() {
+            task = document.getElementById("taskvalue").value;
+            description = document.getElementById('Description-value').value;
+            tast_table = document.getElementById('task_table')
+            date = new Date()
+
+            console.log(task);
+            console.log(description);
+            console.log(date);
+            console.log(date.toDateString());
+
+            new_row = task_table.insertRow()
+            new_row.setAttribute('id','row'+i)
+
+            sl_no = new_row.insertCell();
+            task_name = new_row.insertCell();
+            des = new_row.insertCell();
+            task_date = new_row.insertCell();
+            status = new_row.insertCell();
+            complete_col = new_row.insertCell();
+
+            sl_no.innerHTML = i++;
+            task_name.innerHTML = task;
+            des.innerHTML = description;
+            task_date.innerHTML = date.toDateString();
+
+            complete_btn = document.createElement('BUTTON');
+            complete_btn.innerHTML = 'COMPLETE';
+            complete_btn.style.color = 'red';
+            // complete_btn.addEventListener('click',function complete() {
+                
+            // })
+            complete_btn.onclick = function complete() {
+                status.innerHTML = 'COMPLETED';
+                // status.style.color = ('black')
+                complete_btn.disabled = true;
+            }
+            complete_col.appendChild(complete_btn);
+
+        }
+    </script>
+</body>
+</html>

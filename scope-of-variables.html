@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Scope of variables</h1>
+
+
+
+    <script>
+        // local variable
+        function myFunction() {
+            const loacalvar = "I am local"
+            console.log(loacalvar);
+        }
+
+        myFunction();
+        // console.log(loacalvar);
+        // Uncaught ReferenceError: loacalvar is not definedat scope-of-variables.html:21:21
+
+
+        //  global variable
+        const globalvar = "i am global"
+
+        function myglobal() {
+            console.log(globalvar);
+        }
+
+        myglobal();
+        console.log(globalvar);
+        
+    </script>
+</body>
+
+</html>

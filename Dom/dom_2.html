@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        #parent {
+            height: 500px;
+            width: 500px;
+            background-color: purple;
+        }
+    </style>
+
+
+<body>
+    <label for="">choose color</label>
+    <select name="" id="select-color" onchange="changeBgColor()">
+        <option value="" disabled>select color</option>
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="yellow">yellow</option>
+        <option value="black">black</option>
+    </select>
+    <div id="parent"></div>
+
+
+    <script>
+        function changeBgColor() {
+            div = document.getElementById('parent')
+            color = document.getElementById('select-color').value;
+            if (color == 'red') {
+                div.style.backgroundColor = 'red'
+            }
+            else if (color == 'blue') {
+                div.style.backgroundColor = 'blue'
+            }
+            else if (color == 'green') {
+                div.style.backgroundColor = 'green'
+            }
+            else if (color == 'yellow') {
+                div.style.backgroundColor = 'yellow'
+            }
+            else if (color == 'black') {
+                div.style.backgroundColor = 'black'
+            }
+            else{
+                div.style.backgroundColor = 'purple'
+            }
+        }
+    </script>
+</body>
+
+</html>

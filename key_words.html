@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR LET CONST KEYWORDS</title>
+</head>
+<style>
+    #table{
+        border-collapse: collapse;
+        padding: 20px;
+        width: 80%;
+    }
+    #table th, #table td{
+        border: 2px solid red;
+    }
+</style>
+
+<body>
+    <table id="table">
+        <th></th>
+        <th>Scope</th>
+        <th>Reassigment</th>
+        <th>Redeclaration</th>
+        <th>hoisted</th>
+    </tr>
+    <tr>
+        <td>var</td>
+        <td>functional or global</td>
+        <td>possible</td>
+        <td>possible</td>
+        <td>yes</td>
+    </tr>
+    <tr>
+        <td>let</td>
+        <td>block</td>
+        <td>possible</td>
+        <td>not possible</td>
+        <td>no</td>
+    </tr>
+    <tr>
+        <td>const</td>
+        <td>block</td>
+        <td>not possible</td>
+        <td>not possible</td>
+        <td>no</td>
+    </tr>
+ 
+    </table>
+    <script>
+
+        // function scopeWithoutKeywords() {
+        //     user = 'baabtra'
+        //     console.log('user inside function: ' + user);
+        //     if (true) {
+        //         age = 19
+        //         console.log('user inside block:' + user);
+        //         console.log('age inside block:' + age);
+        //     }
+        //     console.log('age outside block: ' + age);
+        // }
+        // scopeWithoutKeywords()
+        // console.log('user outside function:' + user);
+        // console.log('age outside function:' + age);
+
+        console.log('\n');
+
+        // var name = 'Ajaz'
+        //         function scopeWithVarKeyword() {
+        //             user = 'baabtra'
+        //             console.log('user inside function: ' + user);
+        //             if (true) {
+        //               var  age = 19
+        //                 console.log('user inside block:' + user);
+        //                 console.log('age inside block:' + age);
+        //                 console.log(name);
+        //             }
+        //             console.log('age outside block: ' + age);
+        //             console.log(name);
+        //         }
+        //         scopeWithVarKeyword()
+        //         console.log(name);
+        //         // console.log('user outside function:' + user);
+        //         console.log('age outside function:' + age);
+
+        // console.log('\n');
+        // let name = 'Ajaz'
+        //         function scopeWitLetrKeyword() {
+        //         let    user = 'baabtra'
+        //             console.log('user inside function: ' + user);
+        //             if (true) {
+        //               let  age = 19
+        //                 console.log('user inside block:' + user);
+        //                 console.log('age inside block:' + age);
+        //                 console.log(name);
+        //             }
+        //             console.log('age outside block: ' + age);
+        //             console.log(name);
+        //         }
+        //         scopeWithLetkeyword()
+        //         console.log(name);
+        //         console.log('user outside function:' + user);
+        //         console.log('age outside function:' + age);
+
+
+        // console.log('\n');
+        // let name = 'Ajaz'
+        // function scopeWithConstKeyword() {
+        //     let user = 'baabtra'
+        //     console.log('user inside function: ' + user);
+        //     if (true) {
+        //         let age = 19
+        //         console.log('user inside block:' + user);
+        //         console.log('age inside block:' + age);
+        //         age = 19
+        //         console.log(age);
+        //         var name = 'Ajaaz'
+        //         console.log(name);
+        //     }
+        //     user = 'cybersquare'
+        //     console.log('age outside block: ' + age);
+
+        // }
+
+        // scopeWithConstKeyword()
+
+        // console.log('user outside function:' + user);
+        // console.log('age outside function:' + age);
+
+
+
+console.log(a);
+var a = 20
+console.log(a);
+
+console.log(b);
+let b = 20
+
+console.log(c);
+const c = 40
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Q-1 reverse string
+
+        // function reversestring(str) {
+        //     console.log(str);
+        //     var arr = str.split('')
+        //     console.log(arr);
+        //     var reversedArr = arr.reverse()
+        //     console.log(reversedArr);
+        //     var reversedStr = reversedArr.join('')
+        //     console.log(reversedStr);
+        //     return reversedStr
+        // }
+        // originalstring = prompt('enter a string')
+        // console.log(reversestring(originalstring));
+
+        // function reversestring(str){
+        //     var reversedStr = ''
+        //     console.log(str);
+        //     for(var i = str.length-1; i>= 0; i--){
+        //         console.log(i);
+        //         console.log(str.length);
+        //         console.log(reversedStr + '29');
+        //         reversedStr += str[i]
+        //         console.log(reversedStr);
+        //     }
+        //     return reversedStr
+        // }
+        // originalString = 'Hello'
+        // console.log(reversestring(originalString));
+        //..................................................................//
+
+        // n = 5;
+        // str = '';
+        // for(i=1;i<=n;i++){
+        //     for(j=1;j<=i;j++){
+        //         str += '*'
+        //     }
+        //     str += '\n'
+        // }
+        // console.log(str);
+
+        //  *
+        //  **
+        //  ***
+        //  ****
+        //  *****
+
+        //...........pattern 1..........//
+
+        // n = 5;
+        // str = '';
+        // for (i = 1; 1 <= n; i++) {
+        //     for (j = 1; j <= n; j++) {
+        //         str += '*'
+        //     }
+        //     str += '\n'
+        // }
+        // console.log(str);
+
+        //  *****
+        //  *****
+        //  *****
+        //  *****
+        //  *****
+
+        //.................pattern 2.............//
+
+
+        n = 5;
+        str = '';
+        for (i = 1; i <=n; i++) {
+            for (j = 1; j <= i; j++) {
+                str += j
+                str += ''
+            }
+            str += '\n'
+        }
+        console.log(str); 
+
+
+        // 1
+        // 12
+        // 123
+        // 1234
+        // 12345
+
+        //..........pattern 3.........//
+
+
+
+        n = 5;
+        str = '';
+        for (i = 1; i <= n; i++) {
+            for (j = 1; j <= i; j++) {
+                str += String.fromCharCode(97)
+                str += ''
+            }
+            str += '\n'
+        }
+        console.log(str);
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
